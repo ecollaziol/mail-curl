@@ -28,7 +28,7 @@ while IFS= read -r VALUE; do
   -H 'sec-fetch-user: ?1' \
   -H 'upgrade-insecure-requests: 1' \
   -H 'user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36' \
-  --data-raw 'email=eduardocollaziol%40outlook.com&fullname=&pw=&pw-conf=&digest=0&email-button=Subscribe' ;)
+  --data-raw 'email=mail%40outlook.com&fullname=&pw=&pw-conf=&digest=0&email-button=Subscribe' ;)
 
     # Check if the sentence is present in the response
     if echo "$response" | grep -qF "$SEARCH_SENTENCE"; then
